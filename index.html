@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="app/style/style.css">
+  <script src="app/js/mobile-menu.js" defer></script>
+  <script src="app/js/mobile-slider.js" defer></script>
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="layout"></div>
+    <div class="mobile-menu">
+      <img class="close" src="images/icon-close.svg" alt="close">
+      <div class="mobile-menu-items">
+        <a href="">Collections</a>
+        <a href="">Men</a>
+        <a href="">Women</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+      </div>
+    </div>
+    <header class="header">
+      <div class="logo-and-menu">
+        <img class="menu" src="images/icon-menu.svg" alt="menu">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+
+      <!-- menu item is for desktop -->
+      <div class="menu-items">
+        <a href="">Collections</a><a href="">Men</a><a href="">Women</a><a href="">About</a><a href="">Contact</a>
+      </div>
+
+      <div class="avatar-and-cart">
+        <div class="cart-container">
+          <span class="cart-counter">3</span>
+        <img class="cart" src="images/icon-cart.svg" alt="cart">
+        </div>
+        <img class="avatar" src="images/image-avatar.png" alt="avatar">
+      </div>
+     
+    </header>
+
+    <section class="product-info-container">
+      <div class="carousel-container">
+        <div class="carousel-slide">
+          <img src="images/image-product-4.jpg" id="lastClone" alt="">
+          <img src="images/image-product-1.jpg" alt="">
+          <img src="images/image-product-2.jpg" alt="">
+          <img src="images/image-product-3.jpg" alt="">
+          <img src="images/image-product-4.jpg" alt="">
+          <img src="images/image-product-1.jpg" id="firstClone" alt="">
+        </div>
+        <img src="images/icon-previous.svg" id="prevBtn" class="button" alt="">
+        <img src="images/icon-next.svg" id="nextBtn" class="button" alt="">
+
+      </div>
+
+      
+    </section>
+  </div>
+
+  <!-- Collections
+  Men
+  Women
+  About
+  Contact
+
+  Sneaker Company
+
+  Fall Limited Edition Sneakers
+
+  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.
+
+  $125.00
+  50%
+  $250.00
+
+  0
+  Add to cart -->
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>

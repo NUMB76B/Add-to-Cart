@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+@import 'media';
+@import 'variables';
+@import 'header';
+@import 'product-mobile-view';
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.main-container{
+    min-width: 375px;
+    height: 100vh;
+    position: relative;
+
+    @include media('>=1440px'){
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: $DarkGrayishBlue;
+}
