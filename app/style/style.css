@@ -189,6 +189,8 @@
   display: flex;
   width: 100%;
   height: 300px;
+  -webkit-transform: translateX(-425px);
+          transform: translateX(-425px);
   background-color: black;
 }
 
