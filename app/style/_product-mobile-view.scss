@@ -4,21 +4,21 @@
     display: flex;
     flex-direction: column;
 
-    .not-active{
-        display: none;
-    }
+    // .not-active{
+    //     display: none;
+    // }
 
-    .cart-continer{
-        position: absolute;
-        height: 255px;
-        width: 95%;
-        background-color: $White;
-        z-index: 5;
-        margin: 5px;
-        border-radius: 7px;
-        align-self: center;
+    // .cart-continer{
+    //     position: absolute;
+    //     height: 255px;
+    //     width: 95%;
+    //     background-color: $White;
+    //     z-index: 5;
+    //     margin: 5px;
+    //     border-radius: 7px;
+    //     align-self: center;
 
-    }
+    // }
 
     .carousel-container{
       position: relative;

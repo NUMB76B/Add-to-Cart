@@ -8,14 +8,12 @@
   <link rel="stylesheet" href="app/style/style.css">
   <script src="app/js/mobile-menu.js" defer></script>
   <script src="app/js/mobile-slider.js" defer></script>
+  <script src="app/js/cart-box.js" defer></script>
   
   <title>Frontend Mentor | E-commerce product page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
   <div class="main-container">
@@ -31,6 +29,35 @@
       </div>
     </div>
     <header class="header">
+      <div class="cart-box not-active ">
+
+        <h5>Cart</h5>
+        <hr>
+
+        <div class="cart-box-container">
+          <div class="empty-cart">
+            <p>Your cart is empty</p>
+          </div>
+
+          <div class="cart-checkout">
+            <div class="checkout-details">
+              <img src="images/image-product-1-thumbnail.jpg" class="detail-pic" alt="">
+              <div class="detail-info">
+                <p class="title">Autumn Limited Edition...</p>
+                <div class="detail-price-box">
+                  <span class="price">$125.00</span>
+                  <span class="amount">x 3</span>
+                  <span class="total-price">$375.00</span>
+                </div>
+                
+              </div>
+              <img src="images/icon-delete.svg" alt="" class="delete-btn">
+            </div>
+            <button class="checkout-btn">Checkout</button>
+          </div>
+        </div>
+
+      </div>
       <div class="logo-and-menu">
         <img class="menu" src="images/icon-menu.svg" alt="menu">
         <img src="images/logo.svg" alt="logo">
@@ -52,7 +79,7 @@
     </header>
 
     <section class="product-info-container">
-      <div class="cart-continer"></div>
+      
       <div class="carousel-container">
         <div class="carousel-slide">
           <img src="images/image-product-4.jpg" id="lastClone" alt="">

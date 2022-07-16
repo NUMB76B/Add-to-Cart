@@ -1,10 +1,115 @@
 .header{
+    position: relative;
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 70px;
     background-color: $White;
     padding: 25px;
+
+    .not-active{
+        display: none;
+    }
+
+     .cart-box{
+        position: absolute;
+        height: 255px;
+        width: 360px;
+        background-color: $White;
+        z-index: 5;
+        margin-top: 5px;
+        border-radius: 7px;
+        align-self: center;
+        top: 75px;
+        right: 30px;
+        overflow: hidden;
+
+        .cart-box-container{
+            width: 100%;
+            height: 190px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .cart-checkout{
+                width: 100%;
+                height: 190px;
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                
+
+                .checkout-details{
+                    width: 310px;
+                    height: 50px;
+                    
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center; 
+                    margin-top: 30px;                   
+
+                    .detail-pic{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 5px;
+                    }
+
+                    .detail-info{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 100%;
+                        margin-left: -20px;
+                        color: $DarkGrayishBlue;
+
+                        .total-price{
+                            color: $black;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .delete-btn{
+                        cursor: pointer;
+                    }
+                }
+
+                .checkout-btn{
+                    all: unset;
+                    width: 310px;
+                    height: 50px;
+                    text-align: center;
+                    background-color: $Orange;
+                    color: $White;
+                    border-radius: 10px;
+                    margin-top: 30px;
+                    font-weight: 400;
+                }
+            }
+
+            .empty-cart{
+
+               
+
+                p{
+                    font-weight: 700;
+                    color: $DarkGrayishBlue;
+                }
+
+            }
+            
+        }
+
+        h5{
+            padding: 22px;
+            font-weight: 700;
+        }
+
+        hr{
+            height: 1px;
+            background-color: $GrayishBlue;
+            border: none;
+        }
+    }
 
     @include media('>=phone','<desktop'){
         .menu-items{
