@@ -4,6 +4,12 @@
     display: flex;
     flex-direction: column;
 
+    .gallery{
+        @include media('<desktop'){
+            display: none;
+        }
+    }
+
     // .not-active{
     //     display: none;
     // }
@@ -92,29 +98,47 @@
 
                 p{
                     color: $DarkGrayishBlue;
-                    font-size: 17px;
+
+                    @include media('<desktop'){
+                        font-size: 17px;
+                    }
+                    
                 }
             }
 
             .price-box{
                 display: flex;
-                align-items: center;
+               
+                
                 justify-content: space-between;
 
-                .price{
-                    font-weight: 700;
-                    font-size: 25px;
+               @include media('<desktop'){
+                    align-items: center;                    
+                    flex-direction: row;
+               }
+
+                .price-and-discount{
+                    display: flex;
+                    align-items: center;
+
+                    .price{
+                        font-weight: 700;
+                        font-size: 25px;
+                    }
+    
+                    .discount{
+                        margin-left: 15px;
+                        color: $Orange;
+                        font-weight: 700;
+                        padding: 2px 5px;
+                        font-size: 11px;
+                        border-radius: 5px;
+                        background-color: hsla(26, 100%, 55%,0.3);
+                    }
+
                 }
 
-                .discount{
-                    margin-left: -173px;
-                    color: $Orange;
-                    font-weight: 700;
-                    padding: 2px 5px;
-                    font-size: 11px;
-                    border-radius: 5px;
-                    background-color: hsla(26, 100%, 55%,0.3);
-                }
+                
 
                 .old-price{
                     color: $GrayishBlue;
@@ -125,20 +149,29 @@
 
             .add-to-cart-section{
                 display: flex;
-                align-items: center;
-                flex-direction: column;
+
+                @include media('<desktop'){
+                    align-items: center;
+                    flex-direction: column;
+
+                }
+                
 
                 .counter-container{
                     display: flex;
                     flex-direction: row-reverse;
                     justify-content: space-between;
                     align-items: center;
-                    width: 380px;
+                   
                     height: 50px;
                     padding: 20px;
                     margin-top: 30px;
                     border-radius: 7px;
                     background-color: $LightGrayishBlue;
+
+                    @include media('<desktop'){
+                        width: 380px;
+                    }
 
                     button{
                         all: unset;
@@ -150,21 +183,31 @@
 
                     #decreaseBtn{
                         margin-bottom: 7px;
+                        cursor: pointer;
+                    }
+
+                    #increaseBtn{
+                        cursor: pointer;
                     }
                 }
 
                 .add-to-cartBtn{
-                    all: unset;
+                    
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 380px;
+                    
                     height: 50px;
                     color: $White;
                     font-weight: 600;
                     margin-top: 15px;
                     background-color: $Orange;
                     border-radius: 7px;
+                    cursor: pointer;
+
+                    @include media('<desktop'){
+                        width: 380px;
+                    }
 
 
                     img{

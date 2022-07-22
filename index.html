@@ -9,6 +9,9 @@
   <script src="app/js/mobile-menu.js" defer></script>
   <script src="app/js/mobile-slider.js" defer></script>
   <script src="app/js/cart-box.js" defer></script>
+  <script src="app/js/gallery.js" defer></script>
+  <script src="app/js/addToCart.js" defer></script>
+  
   
   <title>Frontend Mentor | E-commerce product page</title>
 
@@ -45,9 +48,9 @@
               <div class="detail-info">
                 <p class="title">Autumn Limited Edition...</p>
                 <div class="detail-price-box">
-                  <span class="price">$125.00</span>
-                  <span class="amount">x 3</span>
-                  <span class="total-price">$375.00</span>
+                  <span class="price"></span>
+                  <span class="amount"></span>
+                  <span class="total-price"></span>
                 </div>
                 
               </div>
@@ -79,7 +82,18 @@
     </header>
 
     <section class="product-info-container">
+
+      <div class="gallery">
+        <div class="active-pic"><img src="" alt=""></div>
+        <div class="thumbnails-container">
+          <div class="thumbnail pic-1 "><img src="images/image-product-1-thumbnail.jpg" alt=""></div>
+          <div class="thumbnail pic-2"><img src="images/image-product-2-thumbnail.jpg" alt=""></div>
+          <div class="thumbnail pic-3"><img src="images/image-product-3-thumbnail.jpg" alt=""></div>
+          <div class="thumbnail pic-4"><img src="images/image-product-4-thumbnail.jpg" alt=""></div>
+        </div>
+      </div>
       
+      <!--carousel container is for mobile viwe-->
       <div class="carousel-container">
         <div class="carousel-slide">
           <img src="images/image-product-4.jpg" id="lastClone" alt="">
@@ -103,8 +117,11 @@
         </div>
 
         <div class="price-box">
-          <div class="price">$125.00</div>
-          <span class="discount">50%</span>
+          <div class="price-and-discount">
+            <div class="price">$<span id="price">125.00</span></div>
+            <span class="discount">50%</span>
+          </div>
+          
           <span class="old-price">$250.00</span>
         </div>
 
@@ -114,7 +131,7 @@
             <span class="counter">0</span>
             <button id="decreaseBtn"><img src="images/icon-minus.svg" alt=""></button>
           </div>
-          <button class="add-to-cartBtn"><img src="images/icon-cart - white.svg">Add to cart</button>
+          <div class="add-to-cartBtn"><img src="images/icon-cart - white.svg">Add to cart</div>
         </div>
       </section>
       
